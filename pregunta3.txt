@@ -1,0 +1,14 @@
+¿Qué cambiaría en el código (Clases / Métodos)?
+1ro: Agregar en la clase CuentaUsuario, añadir un nuevo atributo transferencias_diarias que será un diccionario para llevar el registro de la cantidad transferida cada día.
+2do: Actualizar el método pagar para la avalidación del límite diario, verificando antes de realizar una transferencia si el usuario a relalizado el límite diario de 200 soles. 
+
+Casos de prueba nuevos necesarios:
+- Prueba de límite diario no alcanzado, realizar transferencias que sumen menos de 200 soles y verificar que se completen exitosamente.
+- Prueba de limite diario alcanzado, realizar tranferencias que sumen exactamente 200 soles y verificar que la siguiente transferencia falla.
+- Prueba de límite en un solo pago, realizar una transferencia mayor a 200soles y verificar que falla
+
+¿Los casos de prueba existentes garantizan que no se introduzcan errores en la funcionalidad
+existente?
+Los casos de prueba que tenemos nos ayudan a asegurarnos de que no se introduzcan errores en las funcionalidades existentes.
+Estas pruebas aseguran que cuando añadimos nuevas funciones al código, como la propuesta de límites diarios de transferencia, no dañemos la estabilidad ni el rendimiento de nuestro software.
+Sin embargo, aunque las pruebas actuales cubren muchos escenarios importantes, siempre podría haber nuevos errores. Por eso, es importante seguir ampliando y actualizando los casos de prueba cada vez que agregamos nuevas funciones, para así poder mantener el software sólido y confiable.
